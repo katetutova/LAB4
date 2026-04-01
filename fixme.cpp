@@ -27,6 +27,7 @@ bool SessionAgregator::sessionDead(std::string uuidForSession) {
         }
     } else {
         // если сессии совсем нет в мапе, значит она не создавалась или протухла
+        std::cout << "Session not found: " << uuidForSession << std::endl;
         return true;
     }
 }
