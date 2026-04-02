@@ -129,3 +129,4 @@ bsoncxx::builder::basic::document SessionAgregator::getFilter(std::string userLo
     return filter;
 }// Коммент 1
 
+// Коммент 2
