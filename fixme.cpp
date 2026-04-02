@@ -11,7 +11,7 @@
 
 using bsoncxx::builder::basic::kvp;
 
-std::map<std::string, Session> SessionAgregator::currentConneпfghj;
+std::map<std::string, Session>;
 
 bool SessionAgregator::sessionDead(std::string uuidForSession) {
     auto availableSession = currentConnections.find(uuidForSession);
