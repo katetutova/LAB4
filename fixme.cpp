@@ -11,7 +11,7 @@
 
 using bsoncxx::builder::basic::kvp;
 
-std::map<std::string, Session> SessionAgregator::currentConneпfghj;
+std::map<std::string, Session>;
 
 bool SessionAgregator::sessionDead(std::string uuidForSession) {
     auto availableSession = currentConnections.find(uuidForSession);
@@ -28,8 +28,7 @@ bool SessionAgregator::sessionDead(std::string uuidForSession) {
             return false;
         }
     } else {
-        // если сессии совсем нет в мапе, значит она не создавалась или протухла
-        std::cout << "Ses: " << uuidForSession << std::endl;
+        
         return true;
     }
 }
